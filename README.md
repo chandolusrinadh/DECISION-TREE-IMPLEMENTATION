@@ -51,3 +51,75 @@ Scikit-learn Documentation: The official documentation was crucial for understan
 VS Code: The Visual Studio Code IDE provided a smooth development environment for writing and running the Python script, with features like integrated terminal, debugger, and extension support for Python.
 
 OUTPUT:
+
+== Tree Rules === |--- petal length (cm) <= 2.45
+
+| |--- class: 0
+
+|--- petal length (cm) > 2.45
+
+| |--- petal length (cm) <= 4.75
+
+| | |--- petal width (cm) <= 1.65
+
+| | | |--- class: 1
+
+| | |--- petal width (cm) > 1.65
+
+| | | |--- class: 2
+
+| |--- petal length (cm) > 4.75
+
+| | |--- petal width (cm) <= 1.75
+
+| | | |--- petal length (cm) <= 4.95
+
+| | | | |--- class: 1
+
+| | | |--- petal length (cm) > 4.95
+
+| | | | |--- petal width (cm) <= 1.55
+
+| | | | | |--- class: 2
+
+| | | | |--- petal width (cm) > 1.55
+
+| | | | | |--- petal length (cm) <= 5.45
+
+| | | | | | |--- class: 1
+
+| | | | | |--- petal length (cm) > 5.45
+
+| | | | | | |--- class: 2
+
+| | |--- petal width (cm) > 1.75
+
+| | | |--- petal length (cm) <= 4.85
+
+| | | | |--- sepal width (cm) <= 3.10
+
+| | | | | |--- class: 2
+
+| | | | |--- sepal width (cm) > 3.10
+
+| | | | | |--- class: 1
+
+| | | |--- petal length (cm) > 4.85
+
+| | | | |--- class: 2
+
+Accuracy: 1.00
+
+=== Classification Report === precision recall f1-score support
+
+  setosa       1.00      1.00      1.00        10
+versicolor 1.00 1.00 1.00 9
+
+virginica 1.00 1.00 1.00 11
+
+accuracy                           1.00        30
+macro avg 1.00 1.00 1.00 30
+
+weighted avg 1.00 1.00 1.00 30
+
+
