@@ -123,3 +123,4 @@ macro avg 1.00 1.00 1.00 30
 weighted avg 1.00 1.00 1.00 30
 
 
+![Image](https://github.com/user-attachments/assets/536789b6-845f-42a0-85f3-48941656f0d3)
